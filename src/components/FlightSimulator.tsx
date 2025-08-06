@@ -2,9 +2,11 @@
 
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { FlightUI } from './FlightUI';
-import { createScene, createPlane, createEnvironment } from '../utils/sceneUtils';
+
+   
 import { FlightPhysics } from '../utils/flightPhysics';
+import { FlightUI } from './FlightUI';
+import { createEnvironment, createPlane, createScene } from '@/utils/sceneUtils';
 
 export default function FlightSimulator() {
   const mountRef = useRef<HTMLDivElement>(null);
